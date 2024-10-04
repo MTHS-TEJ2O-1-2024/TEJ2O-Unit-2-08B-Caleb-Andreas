@@ -60,6 +60,11 @@ input.onButtonPressed(Button.A, function() {
     basic.pause(1000)
     basic.clearScreen()
 
+    // Turn off RGB LED
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
+
     // Happy face
     basic.showIcon(IconNames.Happy)
 })
